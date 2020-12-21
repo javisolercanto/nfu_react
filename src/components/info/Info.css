@@ -1,0 +1,32 @@
+.info {
+    width: 25rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info__toolbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.info__toolbar button {
+    width: 8rem;
+    height: fit-content;
+    padding: 0.5rem;
+    margin-top: 2rem;
+
+    border-radius: 1rem;
+
+    font-size: 1rem;
+}
+
+.info__toolbar button:hover {
+    background-color: #5BB7FF;
+    color: white;
+
+    transition: 0.4s all;
+}

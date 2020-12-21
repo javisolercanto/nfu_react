@@ -1,0 +1,28 @@
+.day {
+
+    height: 100%;
+    width: 100%;
+
+    color: white;
+    background-color: #3b3b3b;
+    border-right: 0.1rem solid black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.day__selected {
+    background-color: grey;
+}
+
+.day__today {
+    background-color: rgba(254, 2, 0, 0.7);
+}
+
+.day__today--selected {
+    background-color:red;
+}

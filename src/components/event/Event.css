@@ -1,0 +1,26 @@
+.event {
+    border: 0.1rem solid black;
+}
+
+/* ION */
+
+.ionevent {
+    width: 20rem;
+    height: fit-content;
+    /* height: 15rem; */
+
+    cursor: pointer;
+}
+
+.ionevent:hover{
+    background-color: #FF5454;
+    color: white;
+
+    transition: 0.4s all;
+}
+
+.ionevent:hover * {
+    color: white;
+
+    transition: 0.4s all;
+}

@@ -1,0 +1,101 @@
+.epg {
+    margin: 2rem;
+    height: 25rem;
+    width: auto;
+    background-color: black;
+
+    display: grid;
+    grid-template-columns: 0.5fr 3fr;
+    grid-template-rows: 0.5fr 2fr 1fr;
+    gap: 0.2rem;
+}
+
+.epg__item {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.epg__timeline {
+    width: 100%;
+    height: 100%;
+    background-color: #3b3b3b;
+    grid-area: 1 / 2;
+}
+
+.epg__infochannel {
+    background-color: #4f4f4f;
+    grid-area: span 2 / 1;
+}
+
+.epg__schedule {
+    background-color: grey;
+
+    overflow-y: hidden;
+    overflow-x: scroll;
+    
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.epg__hours {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+}
+
+.epg__events {
+    height: 100%;
+    background-color: black;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.epg__event {
+    background-color: red;
+}
+
+.epg__infoevent {
+    background-color: #349943;
+
+    grid-area: 3 / span 2;
+}
+
+/* ION */
+
+.ionepg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.separator {
+    width: 20rem;
+}
+
+.separator:hover {
+    background-color: #5BB7FF;
+    color: white;
+
+    transition: 0.4s all;
+
+    cursor: pointer;
+}
+
+.ionepg__title {
+}
+
+.ioncontainer {
+    height: 30rem;
+
+    overflow: scroll;
+}
