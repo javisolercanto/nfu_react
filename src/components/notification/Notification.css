@@ -1,0 +1,204 @@
+
+.shadow {
+    -webkit-box-shadow: 0px 0px 19px 0px rgba(102,102,102,0.56);
+    -moz-box-shadow: 0px 0px 19px 0px rgba(102,102,102,0.56);
+    box-shadow: 0px 0px 19px 0px rgba(102,102,102,0.56);
+}
+
+.notify__card {
+    width: 40rem;
+    height: 10rem;
+
+    position: relative;
+
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: row;
+
+    overflow: hidden;
+
+    user-select: none;
+}
+
+.notify__card__image {
+    width: 30%;
+    height: 100%;
+    
+    background-image: url('../../theme/images/footballpitch.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 0.5rem;
+    font-size: 1.3rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.notify__card__picture {
+    width: 5rem;
+    height: 5rem;
+
+    border-radius: 50%;
+
+    position: absolute;
+    top: 2.7rem;
+    left: 6.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--ion-color-primary);
+    background-image: url('../../theme/images/avatar.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    font-size: 3rem;
+}
+
+.notify__card__data {
+    width: 100%;
+    height: 100%;
+
+    padding-top: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.notify__card__price {
+    width: 30%;
+    height: 100%;
+
+    color: var(--ion-color-primary);
+
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.notify__card__button {
+    width: 80%;
+    height: 2rem;
+
+    color: white;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row {
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.popover--class .popover-content {
+    padding-left: 1rem;
+}
+
+.color-primary {
+    color: var(--ion-color-primary);
+}
+
+.toolbar__icon {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s all;
+}
+
+.responsive--container {
+    width: 130%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.toolbar__icon:hover {
+    color: var(--ion-color-primary-shade);
+}
+
+.primary--bg {
+    background-color: var(--ion-color-primary);
+}
+
+.danger--bg {
+    background-color: var(--ion-color-danger);
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.data-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.text--bold {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1000px) {
+    .notify__card {
+        width: 15rem;
+        height: 20rem;
+    
+        position: relative;
+    
+        border-radius: 1rem;
+    
+        display: flex;
+        flex-direction: row;
+    
+        overflow: hidden;
+    
+        user-select: none;
+    }
+
+    .data-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .notify__card__picture {
+        top: 0.5rem;
+        left: 6.3rem;
+    }
+
+    .responsive--container {
+        flex-direction: column;
+    }
+
+    .notify__card__data {
+        padding-top: 6rem;
+    }
+
+    .notify__card__price {
+    }
+
+}

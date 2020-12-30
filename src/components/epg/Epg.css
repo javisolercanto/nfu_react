@@ -84,12 +84,16 @@
 
 .separator:hover {
     background-color: #5BB7FF;
-    color: white;
 
     transition: 0.4s all;
 
     cursor: pointer;
 }
+
+.separator:hover * {
+    color: white;
+}
+
 
 .ionepg__title {
 }
@@ -98,4 +102,11 @@
     height: 30rem;
 
     overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none; 
+    width: 0px; /* remove scrollbar space */
+    background: transparent;
+
 }

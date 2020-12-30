@@ -1,0 +1,60 @@
+.report {
+    width: 100%;
+    height: 100%;
+
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.report__area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.report__span {
+    width: 100%;
+    text-align: justify;
+}
+
+.report__input {
+    width: 30%;
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.report__ta {
+    width: 100%;
+}
+
+.report__button {
+    width: 10%;
+    margin-top: 2rem;
+}
+
+.report__fab {
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .report__input {
+        width: 50%;
+    
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }    
+
+    .report__button {
+        display: none;
+    }
+
+    .report__fab {
+        display: inline;
+    }
+}
